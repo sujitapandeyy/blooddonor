@@ -54,7 +54,7 @@
     <div class="popup-container" id="userRegistrationForm">
         <div class="popup">
             <form action="login_register.php" name="userRegistrationForm" onsubmit="return validateUserForm()" method="post">
-                <h2>User Register</h2>
+                <h2>User Register jdfjshdfhjsdfh</h2>
                 <?php
                 if (isset($_GET['user_error'])) { ?>
                     <p class="formerror">*<?php echo $_GET['user_error']; ?></p>
