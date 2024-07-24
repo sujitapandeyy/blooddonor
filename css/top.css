@@ -1,0 +1,41 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+#section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f96969;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    width: 100%;
+
+}
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+.left {
+    gap: 10px;
+    
+}
+.right {
+    font-size: 1.2em;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #ffffff;
+}
+.follow{
+    font-weight: bold;
+}
