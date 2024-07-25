@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login And Registration</title>
-    <link rel="stylesheet" href="css/login.css?v=1.3"/>
-   
+    <link rel="stylesheet" href="css/login.css?v=1.5"/>
 </head>
 <body>
 
@@ -38,8 +37,18 @@
                     <div class="input_box">
                         <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;
                         <input type="password" placeholder="Enter Password" name="password" required/>
-                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
                     </div>
+                    <div class="input_box" id="user_type">
+                                <i class="fa-solid fa-tint"></i>
+                                <select name="user_type" id="userType"required>
+                                    <option value="" disabled selected>Select user Type</option>
+                                    <option value="User">User</option>
+                                    <option value="Donor">Donor</option>
+                                    <option value="BoodBank">BloodBank</option>
+                                    <option value="Admin">Admin</option>
+                                </select>
+                            </div>
+
                     <button type="Submit" class="button" name="login">Login Now</button>
                     <div class="login_signup">Don't have an account? <a href="register.php" id="signup">Signup</a></div>
                 </form>

@@ -1,3 +1,4 @@
+
 /* Style for register box */
 .register_form {
     display: flex;
@@ -10,48 +11,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
+    position: absolute;
     top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* max-width: 720px; */
     border-radius: 12px;
-    /* box-shadow: 0px 0px 20px -5px black; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
     background-color: white;
     padding: 15px;
     max-height: 250vh; /* Set the max height to 90% of the viewport height */
     z-index: 3;
-
 }
 
 #popup .container {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
 }
 
 #popup .mainform {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     width: 55vh;
-    height:80vh;
-
+    height: 80vh;
 }
 
-#popup .userbtn, #popup .donorbtn {
+#popup .mainbtn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#popup .userbtn, #popup .hospitalbtn, #popup .bloodbankbtn {
     background: rgb(48, 42, 246);
-    /* margin-top: 3px; */
-    width: 45%;
+    width: 30%;
     padding: 10px 0;
     border: none;
     border-radius: 10px;
@@ -75,18 +72,7 @@
     display: flex;
 }
 
-.input_boxR input {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 0 30px;
-    color: #333;
-    transition: all 0.2s ease;
-    border-bottom: 1.5px solid #aaaaaa;
-}
-.input_boxR select {
+.input_boxR input, .input_boxR select {
     background: transparent;
     height: 100%;
     width: 100%;
@@ -98,7 +84,7 @@
     border-bottom: 1.5px solid #aaaaaa;
 }
 
-.input_boxR input:focus {
+.input_boxR input:focus, .input_boxR select:focus {
     border-color: #f96969;
 }
 
@@ -111,14 +97,18 @@
 
 .input_boxR i.fa-lock,
 .input_boxR i.fa-user,
-.input_boxR i.fa-envelope {
+.input_boxR i.fa-envelope,
+.input_boxR i.fa-phone,
+.input_boxR i.fa-home {
     left: 0;
 }
 
 .input_boxR input:focus~i.fa-user,
 .input_boxR input:focus~i.fa-lock,
-.input_boxR input:focus~i.fa-envelope {
-    color:  #f96969;
+.input_boxR input:focus~i.fa-envelope,
+.input_boxR input:focus~i.fa-phone,
+.input_boxR input:focus~i.fa-home {
+    color: #f96969;
 }
 
 .input_boxR i.fa-eye-slash {
@@ -126,7 +116,7 @@
     font-size: 18px;
 }
 
-#popup #RegButton, #popup #RegButton {
+#popup #RegButton {
     background: #f96969;
     margin-top: 30px;
     padding: 10px 20px;
@@ -138,9 +128,9 @@
     margin-bottom: 10px;
     width: 100%;
 }
-#popup #RegButton:hover ,#popup #RegButton:hover {
-    background-color: #d85757;
 
+#popup #RegButton:hover {
+    background-color: #d85757;
 }
 
 #Register_signup {
@@ -148,20 +138,22 @@
     text-align: center;
     margin-top: 10px;
 }
+
 #Register_signup a {
     color: #007bff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-#Register_signup  a:hover  {
+#Register_signup a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
 
-.image-container  {
+.image-container {
     width: 250px;
 }
+
 .image-container img {
     height: 280px;
     width: 240px;
